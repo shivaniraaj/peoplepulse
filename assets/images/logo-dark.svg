@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="300" height="80" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .pulse-text {
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 32px;
+      font-weight: bold;
+      fill: #215c5c;
+      opacity: 0;
+      animation: fadeIn 2s ease-in-out forwards;
+    }
+    .pp-text {
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 48px;
+      font-weight: bold;
+      fill: #215c5c;
+      animation: bounce 2s infinite alternate;
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+    @keyframes bounce {
+      0%   { transform: translateY(0); }
+      100% { transform: translateY(-5px); }
+    }
+  </style>
+  <!-- Short PP initials on the left -->
+  <text x="10" y="50" class="pp-text">PP</text>
+  <!-- Full PeoplePulse name with fade-in effect -->
+  <text x="80" y="50" class="pulse-text">PeoplePulse</text>
+</svg>
